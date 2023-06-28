@@ -50,9 +50,9 @@
             <input type="text" name="domicilio" placeholder="Domicilio">
             <br>
             <label class="perfil">Perfil de usuario</label>
-            <div>
-            <input type="radio" name="perfil" value="comprar" required>Comprar
-            <input type="radio" name="perfil" value="vender" required>Vender
+            <div class="botonescv">
+            <input type="radio" name="perfil" value="comprar" class="comprador" required>Comprador
+            <input type="radio" name="perfil" value="vender" class="vendedor" required>Vendedor
             </div>
             <label class="intereses">Intereses</label>
             <div class="checkbox">
@@ -66,8 +66,10 @@
             <input type="file" name="foto" required><br>
             <input type="password" name="contraseña" placeholder="Contraseña" required><br>
             <input type="password" name="confirmar-contraseña" placeholder="Confirmar Contraseña" required><br>
-            <button type="submit" name="enviar">Enviar</button>
-            <button type="reset" name="borrar">Borrar</button>
+            <div class="botones-final">
+            <button type="submit" name="enviar" class="boton-enviar">Enviar</button>
+            <button type="reset" name="borrar" class="boton-borrar">Borrar</button>
+            </div>
         </form>
     </main>
     <footer>
@@ -91,7 +93,7 @@
                 porque estás siempre protegid@.</p>
             </section>
         </div>
-        <div>
+        <div class="copyright">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </div>
     </footer>

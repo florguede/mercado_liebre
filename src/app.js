@@ -3,6 +3,7 @@ const app = express ();
 const PORT = 3010;
 const path = require('path');
 
+
 app.get('/home', (req, res) => {
     let htmlPath = path.resolve(__dirname, '../views/home.html');
     res.sendFile(htmlPath);
