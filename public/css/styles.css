@@ -239,6 +239,7 @@ main section article i{
 
 main section article i:hover{
     transform: rotate(-90deg);
+    transition-duration: 0.5s;
 }
 
 .precio-dto{
