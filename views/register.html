@@ -38,16 +38,16 @@
     </header>
     <main>
         <form action="/home" method="GET" class="form-registro">
-            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="nombre" placeholder="Nombre" required minlength="3">
             <br>
-            <input type="text" name="usuario" placeholder="Nombre de usuari@" required>
+            <input type="text" name="usuario" placeholder="Nombre de usuari@" required minlength="3">
             <br>
-            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="email" name="email" placeholder="E-mail">
             <br>
             <label class="fecha-nac">Fecha de nacimiento</label>
             <input type="date" name="nacimiento" required>
             <br>
-            <input type="text" name="domicilio" placeholder="Domicilio">
+            <input type="text" name="domicilio" placeholder="Domicilio" required minlength="3">
             <br>
             <label class="perfil">Perfil de usuario</label>
             <div class="botonescv">
@@ -64,8 +64,8 @@
             </div><br>
             <label class="foto">Foto de usuario</label>
             <input type="file" name="foto" required>
-            <input type="password" name="contraseña" placeholder="Contraseña" required><br>
-            <input type="password" name="confirmar-contraseña" placeholder="Confirmar Contraseña" required><br>
+            <input type="password" name="contraseña" placeholder="Contraseña"><br>
+            <input type="password" name="confirmar-contraseña" placeholder="Confirmar Contraseña"><br>
             <div class="botones-final">
             <button type="submit" name="enviar" class="boton-enviar">Enviar</button>
             <button type="reset" name="borrar" class="boton-borrar">Borrar</button>
